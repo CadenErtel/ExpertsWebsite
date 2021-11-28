@@ -10,8 +10,6 @@ app = Flask(__name__)
 
 ##################################MAIN#########################################
 
-def main() -> None:
-    pass
-
-if __name__ == '__main':
-    main()
+@app.route("/")
+def home():
+    return "hello world!"
